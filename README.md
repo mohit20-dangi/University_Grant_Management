@@ -62,8 +62,8 @@ npm install
 
 ### 3 Install Client Dependencies
 
-cd ../client
-npm install
+-cd ../client
+-npm install
 
 
 ---
@@ -74,11 +74,11 @@ Install PostgreSQL and create a database.
 
 database configuration from the project:
 
-user: postgres
-host: localhost
-database: University Research
-password: your_password
-port: 5432
+-user: postgres
+-host: localhost
+-database: University Research
+-password: your_password
+-port: 5432
 
 ---
 
@@ -86,12 +86,12 @@ port: 5432
 
 ### Start Backend
 
-cd server
-node index.js
+-cd server
+-node index.js
 
 ---
 
 ### Start Frontend
 
-cd client
-npm start
+-cd client
+-npm start
