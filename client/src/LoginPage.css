@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #1a1a2e; /* Dark background for the page */
+  color: #e0e0e0;
+}
+
+.login-wrapper {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-container {
+  flex: 1; /* Takes up 50% of the space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #161625; /* Slightly lighter dark for the form side */
+}
+
+.login-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.login-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-logo h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.logo-icon {
+  font-size: 2.5rem;
+}
+
+.login-header p {
+  margin: 0;
+  font-size: 1rem;
+  color: #a0a0b0;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #c0c0d0;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #3a3a5a;
+  border-radius: 8px;
+  background-color: #1f1f3a;
+  color: #ffffff;
+  font-size: 1rem;
+  box-sizing: border-box; /* Important for padding to work correctly */
+}
+
+.login-form input::placeholder {
+  color: #6a6a8a;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a69ff; /* Bright blue for the button */
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #3a58dd;
+}
+
+.login-error {
+  color: #ff4a4a;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Image side styling */
+.login-image {
+  flex: 1; /* Takes up the other 50% */
+  display: none; /* Hide by default on mobile */
+  background: linear-gradient(rgba(22, 22, 37, 0.7), rgba(22, 22, 37, 0.7)), url('https://images.unsplash.com/photo-1579621970795-87f55d907f35?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.login-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-content p {
+  font-size: 1.1rem;
+  max-width: 450px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .login-image {
+    display: none; /* Hide image pane on smaller screens */
+  }
+  .login-container {
+    flex: 1 1 100%; /* Make form side full width */
+  }
+}
